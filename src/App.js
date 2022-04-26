@@ -21,7 +21,17 @@ const App = () => {
 
     return (
         <div className="app">
-            <h1>MovieLand</h1>;
+            <h1>MovieLand</h1>
+
+            <div className="search">
+                <input
+                    type="text"
+                    placeholder="Search for a movie"
+                    value="superman"
+                    onChange={() => {}}
+                />
+                <img src={SearchIcon} alt="Search" />
+            </div>
         </div>
     );
 };
