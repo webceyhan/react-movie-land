@@ -1,4 +1,4 @@
-const posterPlaceholder = 'https://via.placeholder.com/400';
+import MoviePoster from './MoviePoster';
 
 const MovieCard = ({ movie }) => {
     return (
@@ -10,14 +10,7 @@ const MovieCard = ({ movie }) => {
 
             {/* poster image */}
             <div>
-                <img
-                    src={
-                        movie.Poster !== 'N/A'
-                            ? movie.Poster
-                            : posterPlaceholder
-                    }
-                    alt={movie.Title}
-                />
+                <MoviePoster poster={movie.Poster} />
             </div>
 
             {/* title */}
