@@ -12,7 +12,7 @@ const SearchBar = ({ onClick }) => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search for a movie"
             />
-            <img src={SearchIcon} onClick={() => onClick(searchTerm)} />
+            <img src={SearchIcon} onClick={() => onClick(searchTerm)} alt="search" />
         </div>
     );
 };
