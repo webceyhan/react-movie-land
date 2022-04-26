@@ -12,6 +12,8 @@ const SearchBar = ({ onClick }) => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="form-control bg-transparent text-white-50"
                 placeholder="Search for a movie"
+                tabIndex="0"
+                autoFocus
             />
             <span className="input-group-text bg-transparent">
                 <img
