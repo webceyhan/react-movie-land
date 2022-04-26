@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import SearchIcon from './search.svg';
 import MovieCard from './MovieCard';
 import './App.css';
+import SearchBar from './SearchBar';
 
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
 
 const App = () => {
     const [movies, setMovies] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
 
     const searchMovies = async (title) => {
         const url = `${API_URL}&s=${encodeURIComponent(title)}`;
@@ -21,19 +20,7 @@ const App = () => {
         <div className="app">
             <h1>MovieLand</h1>
 
-            <div className="search">
-                <input
-                    type="text"
-                    placeholder="Search for a movie"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
-                <img
-                    src={SearchIcon}
-                    alt="Search"
-                    onClick={() => searchMovies(searchTerm)}
-                />
-            </div>
+            <SearchBar onClick={searchMovies} />
 
             <div className="container">
                 {movies?.length > 0 ? (
