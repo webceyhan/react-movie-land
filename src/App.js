@@ -1,20 +1,11 @@
 import './App.css';
-import { useState } from 'react';
+
 import SearchBar from './components/SearchBar';
 import MovieCardList from './components/MovieCardList';
-
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
+import { useAPI } from './api';
 
 const App = () => {
-    const [movies, setMovies] = useState([]);
-
-    const searchMovies = async (title) => {
-        const url = `${API_URL}&s=${encodeURIComponent(title)}`;
-        const response = await fetch(url);
-        const data = await response.json();
-
-        setMovies(data.Search);
-    };
+    const [movies, searchMovies] = useAPI();
 
     return (
         <div className="app">
