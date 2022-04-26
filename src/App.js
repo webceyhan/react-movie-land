@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import SearchIcon from './search.svg';
 import MovieCard from './MovieCard';
 import './App.css';
@@ -16,10 +16,6 @@ const App = () => {
 
         setMovies(data.Search);
     };
-
-    useEffect(() => {
-        searchMovies('hjhg');
-    }, []);
 
     return (
         <div className="app">
