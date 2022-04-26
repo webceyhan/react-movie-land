@@ -30,7 +30,7 @@ const App = () => {
                     value="superman"
                     onChange={() => {}}
                 />
-                <img src={SearchIcon} alt="Search" />
+                <img src={SearchIcon} alt="Search" onClick={() => {}} />
             </div>
         </div>
     );
