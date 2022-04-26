@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import SearchIcon from './search.svg';
+import './App.css';
 
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
 
@@ -17,7 +19,11 @@ const App = () => {
         fetchData();
     }, []);
 
-    return <h1>Hello World</h1>;
+    return (
+        <div className="app">
+            <h1>MovieLand</h1>;
+        </div>
+    );
 };
 
 export default App;
