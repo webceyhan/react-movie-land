@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import MovieCard from './MovieCard';
 import './App.css';
+import { useState } from 'react';
 import SearchBar from './SearchBar';
+import MovieCardList from './MovieCardList';
 
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
 
@@ -21,18 +21,7 @@ const App = () => {
             <h1>MovieLand</h1>
 
             <SearchBar onClick={searchMovies} />
-
-            <div className="container">
-                {movies?.length > 0 ? (
-                    movies.map((movie) => (
-                        <MovieCard key={movie.imdbID} movie={movie} />
-                    ))
-                ) : (
-                    <div className="empty">
-                        <h2>No movies found</h2>
-                    </div>
-                )}
-            </div>
+            <MovieCardList movies={movies} />
         </div>
     );
 };
