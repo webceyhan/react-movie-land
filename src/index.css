@@ -1,0 +1,42 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.movie {
+    height: 460px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.movie:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+}
+
+.movie-header {
+    top: 0;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.movie-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.movie:hover .card-img {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.movie:hover .movie-header {
+    opacity: 1;
+    font-size: 30rem !important;
+}
+
+.movie:hover .movie-footer {
+    background-color: transparent;
+}

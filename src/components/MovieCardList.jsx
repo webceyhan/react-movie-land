@@ -2,17 +2,21 @@ import MovieCard from './MovieCard';
 
 const MovieCardList = ({ movies }) => {
     return (
-        <div className="container">
+        <>
             {movies?.length > 0 ? (
-                movies.map((movie) => (
-                    <MovieCard key={movie.imdbID} movie={movie} />
-                ))
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    {movies.map((movie, i) => (
+                        <div className="col" key={i}>
+                            <MovieCard movie={movie} />
+                        </div>
+                    ))}
+                </div>
             ) : (
-                <div className="empty">
-                    <h2>No movies found</h2>
+                <div className="alert alert-dark">
+                    <h3 className="m-0">No movies found</h3>
                 </div>
             )}
-        </div>
+        </>
     );
 };
 

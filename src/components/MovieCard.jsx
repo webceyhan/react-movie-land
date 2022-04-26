@@ -2,21 +2,20 @@ import MoviePoster from './MoviePoster';
 
 const MovieCard = ({ movie }) => {
     return (
-        <div className="movie">
-            {/* year */}
-            <div>
-                <p>{movie.Year}</p>
-            </div>
+        <div className="movie card bg-black border-0">
+            <MoviePoster poster={movie.Poster} />
 
-            {/* poster image */}
-            <div>
-                <MoviePoster poster={movie.Poster} />
-            </div>
+            <div className="card-img-overlay">
+                <div className="movie-header w-100 p-4">
+                    <h1>{movie.Year}</h1>
+                </div>
 
-            {/* title */}
-            <div>
-                <span>{movie.Type}</span>
-                <h3>{movie.Title}</h3>
+                <div className="movie-footer bg-black p-3">
+                    <h5 className="text-uppercase text-secondary">
+                        {movie.Type}
+                    </h5>
+                    <h3 className="m-0">{movie.Title}</h3>
+                </div>
             </div>
         </div>
     );
