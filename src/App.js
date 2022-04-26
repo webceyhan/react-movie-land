@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from 'react';
-import SearchBar from './SearchBar';
-import MovieCardList from './MovieCardList';
+import SearchBar from './components/SearchBar';
+import MovieCardList from './components/MovieCardList';
 
 const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
 
