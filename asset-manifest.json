@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/webceyhan/react-movie-land/static/css/main.1287c384.css",
+    "main.js": "/webceyhan/react-movie-land/static/js/main.5bbb8b82.js",
+    "index.html": "/webceyhan/react-movie-land/index.html",
+    "static/media/search.svg": "/webceyhan/react-movie-land/static/media/search.981b582ea232c3cb047eca919deaf9e8.svg",
+    "main.1287c384.css.map": "/webceyhan/react-movie-land/static/css/main.1287c384.css.map",
+    "main.5bbb8b82.js.map": "/webceyhan/react-movie-land/static/js/main.5bbb8b82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1287c384.css",
+    "static/js/main.5bbb8b82.js"
+  ]
+}
