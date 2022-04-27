@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+<!-- AUTOMATION BADGES -->
+
+[![CodeQL](https://github.com/webceyhan/react-movie-land/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/webceyhan/react-movie-land/actions/workflows/codeql-analysis.yml)
+[![Build and Deploy](https://github.com/webceyhan/react-movie-land/actions/workflows/gh-pages-deploy.yml/badge.svg)](https://github.com/webceyhan/react-movie-land/actions/workflows/hg-pages-gh-pages-deploy.yml)
+
+<!-- HEADER ///////////////////////////////////////////////////////////// -->
+
+# React MovieLand Application
+
+This is a simple movie search SPA inspired by a tutorial to demonstrate the basics of React framework and its core concepts.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[View Demo](https://ceyhan.io/react-movie-land/) |
+[Report Issue](https://github.com/webceyhan/react-movie-land/issues) |
+[Request Feature](https://github.com/webceyhan/react-movie-land/pulls) |
+[@webceyhan](https://twitter.com/webceyhan)
 
-In the project directory, you can run:
+<br>
+<!-- INSTALLATION //////////////////////////////////////////////////////// -->
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository.
+    ```sh
+    git clone https://github.com/webceyhan/react-movie-land.git
+    ```
+2. Get inside the cloned project folder.
+    ```sh
+    cd react-movie-land
+    ```
+3. Install NPM packages.
+    ```sh
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
+<!-- DEVELOPMENT ///////////////////////////////////////////////////////// -->
 
-### `npm test`
+## Development
 
-Launches the test runner in the interactive watch mode.\
+Run the app in the development mode.
+
+```sh
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
+The page will reload when you make changes. You may also see any lint errors in the console.
+
+<br>
+<!-- TESTING ///////////////////////////////////////////////////////////// -->
+
+## Testing
+
+Launche the test runner in the interactive watch mode.
+
+```sh
+npm test
+```
+
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+<br>
+<!-- BUILDING //////////////////////////////////////////////////////////// -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Building
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Build the app for production to the `build` folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+npm run build
+```
+It correctly bundles React in production mode and optimizes the build for the best performance.\
+The build is minified and the filenames include the hashes. Your app is ready to be deployed!
 
-### `npm run eject`
+You can also preview the built application locally as follows:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm install -g serve # if not installed yet
+serve -s build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
+<!-- DEPLOYMENT ////////////////////////////////////////////////////////// -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment (GitHub Pages)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A GitHub Action will automatically deploy the project to GitHub Pages on every push.
 
-## Learn More
+The workflow will build the project using npm and output the result to the `dist` folder which will be then pushed to the `gh-pages` branch.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> See the details in [.github/workflows/gh-pages-deploy.yml](./.github/workflows/gh-pages-deploy.yml)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
+<!-- REFERENCES ////////////////////////////////////////////////////////// -->
 
-### Code Splitting
+## References
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   [Node.js](https://nodejs.dev/)
+-   [React](https://reactjs.org/)
+-   [Bootstrap](https://getbootstrap.com)
+-   [GitHub Actions](https://docs.github.com/en/actions)
+    -   [GitHub Pages](https://pages.github.com/)
+    -   [github-pages-deploy-action](https://github.com/JamesIves/)
+-   [React JS Crash Course 2022](https://www.youtube.com/watch?v=b9eMGE7QtTk&t=3002s)
