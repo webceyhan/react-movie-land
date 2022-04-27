@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=90715111';
+const API_URL = 'https://www.omdbapi.com/?i=tt3896198&apikey=90715111';
 
 const fetchMovies = async (title) => {
     const url = `${API_URL}&s=${encodeURIComponent(title)}`;
