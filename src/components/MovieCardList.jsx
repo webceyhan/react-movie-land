@@ -4,7 +4,7 @@ const MovieCardList = ({ movies }) => {
     return (
         <>
             {movies?.length > 0 ? (
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
                     {movies.map((movie, i) => (
                         <div className="col" key={i}>
                             <MovieCard movie={movie} />
