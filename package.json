@@ -1,8 +1,16 @@
 {
   "name": "react-movie-land",
-  "version": "0.1.0",
   "private": true,
+  "author": "Evren Ceyhan",
   "license": "MIT",
+  "homepage": "https://github.com/webceyhan/react-movie-land#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webceyhan/react-movie-land.git"
+  },
+  "bugs": {
+    "url": "https://github.com/webceyhan/react-movie-land/issues"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
