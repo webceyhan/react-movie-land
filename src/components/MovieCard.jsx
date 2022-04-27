@@ -11,10 +11,10 @@ const MovieCard = ({ movie }) => {
                 </div>
 
                 <div className="movie-footer bg-black p-3">
-                    <h5 className="text-uppercase text-secondary">
+                    <h6 className="text-uppercase text-secondary">
                         {movie.Type}
-                    </h5>
-                    <h3 className="m-0">{movie.Title}</h3>
+                    </h6>
+                    <h4 className="m-0">{movie.Title}</h4>
                 </div>
             </div>
         </div>
