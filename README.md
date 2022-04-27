@@ -1,7 +1,7 @@
 <!-- AUTOMATION BADGES -->
 
 [![CodeQL](https://github.com/webceyhan/react-movie-land/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/webceyhan/react-movie-land/actions/workflows/codeql-analysis.yml)
-[![Build and Deploy](https://github.com/webceyhan/react-movie-land/actions/workflows/gh-pages-deploy.yml/badge.svg)](https://github.com/webceyhan/react-movie-land/actions/workflows/hg-pages-gh-pages-deploy.yml)
+[![Build and Deploy](https://github.com/webceyhan/react-movie-land/actions/workflows/gh-pages-deploy.yml/badge.svg)](https://github.com/webceyhan/react-movie-land/actions/workflows/gh-pages-deploy.yml)
 
 <!-- HEADER ///////////////////////////////////////////////////////////// -->
 
