@@ -5,7 +5,7 @@
 
 <!-- HEADER ///////////////////////////////////////////////////////////// -->
 
-# React MovieLand Application
+# MovieLand Application + React + Bootstrap
 
 This is a simple movie search SPA inspired by a tutorial to demonstrate the basics of React framework and its core concepts.
 
